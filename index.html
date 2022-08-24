@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Ivy School</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
 <body>
 
-<h1>Students' Summer Work</h1>
-  
-<a href="example.html">example</a>
+<h2>Students' Summer Work</h2>
 
-<p>Group C</p>
-  
-<ul>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Group C</h2>
+    <p><ul>
   <li><a href="c/squirtle.html">Squirtle</a></li>
   <li><a href="c/bulbasaur.html">Bulbasaur</a></li>
   <li><a href="c/charmander.html">Charmander</a></li>
@@ -31,11 +54,11 @@
   <li><a href="c/onix.html">Onix</a></li>
   <li><a href="c/oddish.html">Oddish</a></li>
   <li><a href="c/fortnite.html">Fortnite</a></li>
-</ul>  
-
-<p>Group D</p>
-  
-<ul>
+</ul>  </p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Group D</h2>
+    <p><ul>
   <li><a href="d/mario.html">Mario</a></li>
   <li><a href="d/luigi.html">Luigi</a></li>
   <li><a href="d/peach.html">Peach</a></li>
@@ -56,10 +79,13 @@
   <li><a href="d/goombella.html">Goombella</a></li>
   <li><a href="d/peanut.html">Peanut</a></li>
   <li><a href="d/cats.html">Candllels</a></li>
-</ul>  
-
+</ul>  </p>
+  </div>
+</div>
 
 </body>
 </html>
+
+
 
 
